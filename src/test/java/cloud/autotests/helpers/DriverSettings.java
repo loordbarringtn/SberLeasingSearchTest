@@ -22,7 +22,8 @@ public class DriverSettings {
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--lang=en-en");
+        //chromeOptions.addArguments("--lang=en-en");
+        chromeOptions.addArguments("--lang=RU");
 
         if (Project.isWebMobile()) { // for chrome only
             Map<String, Object> mobileDevice = new HashMap<>();
