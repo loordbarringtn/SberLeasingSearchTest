@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 public class TestTask extends TestBase {
-    private static final String BASE_URL = "https://www.google.com/";
+    private static final String BASE_URL = "https://www.google.com/ru";
     private static final String TEXT_TO_SEARCH = "СберЛизинг — официальный сайт лизинговой компании";
 
     @org.junit.jupiter.api.Test
