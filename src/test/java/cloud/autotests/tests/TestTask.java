@@ -24,10 +24,12 @@ public class TestTask extends TestBase {
     void generatedTest() {
         step("1) Перейти на сайт Google", () -> {
             open(BASE_URL);
-            System.out.println("os.name: " + OS);
         });
 
         step("2) Найти в поиске СберЛизинг", () -> {
+            if ($(byXpath("//*[@class=\"rOmdg\"]")).isDisplayed()) {
+                $(byId("L2AGLb")).click();
+            }
             $("[name=q]").setValue("СберЛизинг").pressEnter();
         });
 
