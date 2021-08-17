@@ -14,10 +14,8 @@ public class CarSelection {
         $(byXpath("//span[contains(text(),'" + categoryChoice + "')]")).click();
     }
 
-
-
-
-
-
+    protected void selectCarTypeConfiguration(String categoryChoice) {
+        $x("//label[contains(text(),'" + categoryChoice + "')]").click();
+    }
 
 }

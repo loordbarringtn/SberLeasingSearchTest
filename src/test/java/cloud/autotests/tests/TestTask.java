@@ -17,6 +17,7 @@ public class TestTask extends TestBase {
     private static final String TEXT_TO_SEARCH = "СберЛизинг — официальный сайт лизинговой компании";
     CarSelection carSelection = new CarSelection();
     SelenideElement elementWeCheck =$x("//h1[@class='h2']");
+    SelenideElement slider2 =$x("//div[@aria-label='slider between 67 and 612']//div[@class='el-slider__bar']");
 
     @org.junit.jupiter.api.Test
     @Description("Тестовое задание для СберЛизинг")
@@ -76,8 +77,6 @@ public class TestTask extends TestBase {
 
            $x("//div[@class='range-slider-values__right']//input[@type='number']").
                     setValue("3500000");
-            
-            SelenideElement slider2 =$x("//div[@aria-label='slider between 67 and 612']//div[@class='el-slider__bar']");
 
             if ($x("//div[@class='col-lg-7 ml-lg-0 ml-md-20 pb-4 pr-lg-90 pt-40 pt-lg-60 px-30 px-lg-30 px-sm-30 px-sm-60 py-30']").
                     isDisplayed()) {
@@ -89,15 +88,19 @@ public class TestTask extends TestBase {
                     isDisplayed()) {
                 $x("//div[@class='modal-present__close']").click();
             }
-           $x("//label[contains(text(),'передний')]").click();
-           $x("//label[contains(text(),'автомат')]").click();
+
+            carSelection
+                    .selectCarTypeConfiguration("передний");
+            carSelection
+                    .selectCarTypeConfiguration("автомат");
            $x("//label[@title='седан']").click();
 
            $x("//div[contains(text(),'Тип кузова')]").scrollIntoView(true);
            $x("//label[@for='arrFilter_237_3706474592']").click();
            $x("//div[@class='horizontal-filter-block__selector-current-value']//input[@type='text']")
                     .click();
-           $x("//label[contains(text(),'белый')]").click();
+           carSelection
+                   .selectCarTypeConfiguration("белый");
            $x("//div[contains(text(),'Тип топлива')]").click();
         });
 
