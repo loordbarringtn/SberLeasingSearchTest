@@ -85,8 +85,6 @@ public class TestTask extends TestBase {
             }
             actions().dragAndDropBy(slider2, 3, 0).build().perform();
 
-
-
             if ($x("//div[contains(@class, 'main-order-form')]").
                     isDisplayed()) {
                 $x("//div[@class='modal-present__close']").click();
@@ -95,7 +93,6 @@ public class TestTask extends TestBase {
            $x("//label[contains(text(),'автомат')]").click();
            $x("//label[@title='седан']").click();
 
-            //$(byXpath("//button[contains(text(),'Закрыть')]")).click();
            $x("//div[contains(text(),'Тип кузова')]").scrollIntoView(true);
            $x("//label[@for='arrFilter_237_3706474592']").click();
            $x("//div[@class='horizontal-filter-block__selector-current-value']//input[@type='text']")
