@@ -11,6 +11,7 @@ Java | Intellij Idea | Selenide | Selenoid | Gradle |
 ![image](https://user-images.githubusercontent.com/86851419/129460565-68f2b13e-0f71-4510-9266-21c1bf95d55b.png)| ![image](https://user-images.githubusercontent.com/86851419/129460671-00864a0c-a1e9-415b-9df3-25062b4ee5ca.png) | ![image](https://user-images.githubusercontent.com/86851419/129460019-82755ea3-50b7-4d91-a5d0-f98430544079.png) |![image](https://user-images.githubusercontent.com/86851419/129461200-cc199a3e-8a0b-4879-883b-ca0c7b8e7d9c.png) |![image](https://user-images.githubusercontent.com/86851419/129460847-d77a8a9d-0022-440f-b0f4-96dde9d22e58.png)
 
 ### :bar_chart: Results of test run in Allure report:
+<img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureOverview.png?raw=true" >
 
 ### For run remote tests need fill remote.properties or to pass value:
 
