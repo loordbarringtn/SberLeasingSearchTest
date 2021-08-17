@@ -13,6 +13,9 @@ Java | Intellij Idea | Selenide | Selenoid | Gradle |
 ### :bar_chart: Results of test run in Allure report:
 <img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureOverview.png?raw=true" >
 
+### :clipboard: Allure report with steps and attachments:
+<img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureOverview.png?raw=true" >
+
 ### For run remote tests need fill remote.properties or to pass value:
 
 * browser (default chrome)
