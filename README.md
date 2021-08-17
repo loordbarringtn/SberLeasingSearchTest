@@ -14,7 +14,7 @@ Java | Intellij Idea | Selenide | Selenoid | Gradle |
 <img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureOverview.png?raw=true" >
 
 ### :clipboard: Allure report with steps and attachments:
-<img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureOverview.png?raw=true" >
+<img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureSteps.png?raw=true" >
 
 ### For run remote tests need fill remote.properties or to pass value:
 
