@@ -31,8 +31,10 @@ public class TestTask extends TestBase {
         });
 
         step("2) Найти в поиске СберЛизинг", () -> {
-            if ($x("//*[@class=\"rOmdg\"]").isDisplayed()) {
-                $x("L2AGLb").click();
+            if ($x("//div[text()=\"Прежде чем перейти к Google Поиску\"]").isDisplayed()) {
+                $x("//div[@role='none'][contains(text(),'Принимаю')]").click();
+            } else if ($x("Bevor Sie zur Google Suche weitergehen").isDisplayed()) {
+                $x("//div[@role='none'][contains(text(),'Ich stimme zu')]").click();
             }
             $("[name=q]").setValue("СберЛизинг").pressEnter();
         });
@@ -47,6 +49,7 @@ public class TestTask extends TestBase {
             killAnniversaryPopUpBanner();
             $(byId("marketplace-horizontal-filter-title")).scrollIntoView(true);
             $x("//span[contains(text(),'Город')]").click();
+
             carSelection
                     .getFilterSelection("Москва");
             carSelection
