@@ -16,6 +16,9 @@ Java | Intellij Idea | Selenide | Selenoid | Gradle |
 ### :clipboard: Allure report with steps and attachments:
 <img src="https://github.com/loordbarringtn/SberLeasingSearchTest/blob/master/AllureSteps.png?raw=true" >
 
+### Telegram channel for report with results [(Telegram channel)](https://t.me/joinchat/fWDcQmj4ysBiMmQy)
+*telegram integration made through 3d-parties library, settings passed through Jenkins job
+
 ### For run remote tests need fill remote.properties or to pass value:
 
 * browser (default chrome)
