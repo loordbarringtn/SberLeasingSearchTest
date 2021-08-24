@@ -68,7 +68,7 @@ public class TestBase {
     }
 
     protected void killAnniversaryPopUpBanner() {
-        $x("//div[contains(@class, 'main-order-form__fields row')]").shouldBe(visible, ofSeconds(15)).click();
+        $x("//div[contains(@class, 'main-order-form__fields row')]").shouldBe(visible, ofSeconds(25)).click();
         $(".modal-present__close").shouldBe(visible, ofSeconds(15)).click();
     }
 
