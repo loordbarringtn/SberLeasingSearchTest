@@ -30,7 +30,7 @@ public class TestTask extends TestBase {
         step("2) Найти в поиске СберЛизинг", () -> {
             if ($x("//div[text()=\"Прежде чем перейти к Google Поиску\"]").isDisplayed()) {
                 $x("//div[@role='none'][contains(text(),'Принимаю')]").click();
-            } else if ($x("Bevor Sie zur Google Suche weitergehen").isDisplayed()) {
+            } else if ($x("//div[text()=\"Bevor Sie zur Google Suche weitergehen\"]").isDisplayed()) {
                 $x("//div[@role='none'][contains(text(),'Ich stimme zu')]").click();
             }
             $("[name=q]").setValue("СберЛизинг").pressEnter();
